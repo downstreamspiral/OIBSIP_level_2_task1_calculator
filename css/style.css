@@ -17,14 +17,18 @@ body{
 .piece{
     max-width: 800px;
     height: auto;
-    margin: 100px auto;
+    margin: 60px auto;
 
     display: flex;
     flex-direction: column;
     gap: 30px;
-    background: linear-gradient(#344456,#2ba455);
+    /* background: linear-gradient(#344456,#2ba455); */
+
+    background: linear-gradient(135deg, #0f2027, #2c5364);
     border: 2px solid black;
     border-radius: 5px;
+
+    position: relative;
 }
 
 
@@ -47,32 +51,67 @@ body{
     font-family: 'VT323',sans-serif;
     font-size: 40px;
     font-weight: bold;
+    padding: 0 5px;
+}
+
+.border_line2{
+    position: absolute;
+    top: 25%;
+    left: 20px;
+    width: 500px;
+    border: 3px solid black;
+}
+
+
+.border_line{
+    position: absolute;
+    top: 30%;
+    left: 61%;
+    width: 200px;
+    height: 380px;
+    pointer-events: none;
+    
+
+    
+
+    border: 2px solid grey;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #1b9a;
 }
 
 .button_panel{
     width: 500px;
-    height: auto;
+    height: 350px;
     display: flex;
     flex-direction: column;
     gap: 30px;
 
     margin: 0 20px 30px 20px;
+
+   
     
 
 }
+
 
 .button_panel div{
     display: flex;
     flex-wrap: nowrap;
     gap: 30px;
-    height: 50px;
+    height: 65px;
 }
 
 .button_panel div button{
-    width: 100px;
+    width: 400px;
     margin: 0 auto ;
+    color: white;
+    background-color: #344456;
+    
     border-radius: 50%;
     font-size: 30px;
     font-weight: bold;
     font-family: 'Poppins',sans-serif;
+    cursor: pointer;
+
+    box-shadow: 2px 2px 1px black;
 }
